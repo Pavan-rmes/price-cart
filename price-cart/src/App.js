@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Button from '@mui/material/Button';
+import {data} from "./data.js"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Buyoptions key="free" />
+      <Buyoptions />
+      <Buyoptions />
     </div>
   );
 }
+
+function Buyoptions({prop}){
+  return(
+    <div className="buy-card">
+      {data.free.map((value)=>console.log(value))}
+      <Button style={{width:"50px"}} variant="contained">Buy</Button>
+    </div>
+  )
+}
+
 
 export default App;
