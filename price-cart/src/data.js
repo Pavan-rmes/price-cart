@@ -15,7 +15,7 @@ const data = { free: [
         [true,"Unlimited Private Projects"],
         [true,"Dedicated Phone Support"],
         [true,"Free Subdomain"],
-        [true,"Monthly Status Reports"]],
+        [false,"Monthly Status Reports"]],
     pro:[
         [true,"Unlimited Users"],
         [true,"150GB Storage"],
