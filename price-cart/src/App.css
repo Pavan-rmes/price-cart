@@ -10,21 +10,23 @@ body{
   height: 600px;
   background-color: rgb(75, 147, 206);
 }
-.buy-card{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position:relative;
+.container{
   margin: 50px;
   border-radius: 10px;
   width: 400px;
   background-color: azure;
 }
+.buy-card{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
 .buy-card p{
   font-size: 20px;
   margin: 10px;
 }
-.buy-card:hover{
+.container:hover{
   margin-top: 45px;
   margin-bottom: 55px;
 }

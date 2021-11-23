@@ -19,6 +19,7 @@ const data = { free: [
     pro:[
         [true,"Unlimited Users"],
         [true,"150GB Storage"],
+        [true,"Unlimited Public Projects"],
         [true,"Community Access"],
         [true,"Unlimited Private Projects"],
         [true,"Dedicated Phone Support"],

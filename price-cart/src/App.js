@@ -17,14 +17,15 @@ function App() {
 function Buyoptions({value}){
   console.log(value)
   return(
-    <div className="buy-card">
-      {data[value].map((value,index)=>{
-        <div>
-          value[0]==true?<DoneIcon /> :<CloseIcon />
-          <p>{value[1]}</p>
-        </div>
-      })}
-      <Button style={{width:"50px"}} variant="contained">Buy</Button>
+    <div className="container">
+      <div className="buy-card">
+        {data[value].map((value,index)=>{
+          return(
+              <p>{value[0]===true?<DoneIcon /> :<CloseIcon />} {value[1]}</p>
+          )
+        })}
+      </div>
+      <Button style={{padding:"10px",marginLeft:"45%",marginTop:"10px"}} variant="contained">Buy</Button>
     </div>
   )
 }
